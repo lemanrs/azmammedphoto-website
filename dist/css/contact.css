@@ -67,11 +67,10 @@ a {
     grid-template-areas: "name email"
                          "subject phone"
                          "message message";
-    grid-gap: 1.2rem;
+    grid-gap: 1.5rem;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    margin: 0 15rem 1.5rem 15rem;
-    height: 15rem;
+   
     
 }
 
@@ -135,8 +134,7 @@ a {
 .my-2 {
 
 margin-top: 10rem;
-align-content:center;
-justify-content: center;
+
 }
 
 /* Contact Form End */
@@ -206,6 +204,7 @@ and (max-width: 480px) {
 
 .logo{
     font-size: smaller;
+    
 }
 
 
@@ -218,54 +217,19 @@ and (max-width: 480px) {
    
 }
 
+#contact-a.text-fields {
 
-#contact-a .text-fields {
-    display: grid ;
-    grid-template-areas: "name email"
-                         "subject phone"
-                         "message message";
-    grid-gap: 0.3rem;
-    padding: 0.5rem;
-    margin: 5rem 1.5rem 5rem 0;
-    height: 10rem;
-    width: 30%;
-}
-
-#contact-a  .message-input {
-
-    grid-area: message;
-    height: 50px;
-}
-
-#contact-a .text-input {
-    padding: 0.5rem 1rem;
-} 
-#contact-a .email-input {
-    margin-right: 1rem;
-} 
-
-.section-title {
-
-    text-align: center;
-    margin-top: 5rem;
-    font-size: small;
-}
-
-.bottom-line{
-    padding: 0.2rem;
-    width: 10rem;
-    background: green;
-    margin: auto;
-    margin-top: 1rem;
-}
-
-
-.btn {
-    padding: 0.5rem;
-    margin: auto;
-    display: block;
-    width: 4rem;
-    border-radius: 7px;
+    display: grid;
+    grid-template-areas: "name"
+                        "subject"
+                        "email"
+                        "phone"
+                        "message";
+    margin-left: 0;
+    grid-gap: 0.5rem;
+    padding: 1rem;
+    
+    
 }
 
 #main-footer {
@@ -316,30 +280,27 @@ and (max-width: 767px) {
 
 #contact-a .text-fields {
     display: grid ;
-    grid-template-areas: "name email"
-                         "subject phone"
-                         "message message";
+    grid-template-areas: 
+    "name"
+    "subject"
+    "email"
+    "phone"
+    "message";
     grid-gap: 1rem;
     padding: 1rem;
-    height: 8rem;
-    width: 50%;
+    height: 10rem;
+    width: 100%;
+    margin: 0;
     margin-bottom: 5rem;
 }
 
-.section-title {
-
-    text-align: center;
-    margin-top: 5rem;
-    font-size: 1rem;
-
-}
 
 .btn {
     padding: 1rem;
     display: block;
     width: 5rem;
     border-radius: 7px;
-    margin-top: 7rem;
+    margin-top: 12rem;
 }
 
 
@@ -479,4 +440,6 @@ and (max-width: 1280px)
     width: 100%;
    
 }}
+
+
 
